@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion de Elementos</title>
+</head>
+<body style="background-color: rgb(34, 34, 34)">
+    <p id="parrafo">Prueba para control de DOM</p>
+    <p>Otro parrafo</p>
+    <style>
+        #identificador2{
+            color: red;
+        }
+    </style>
+
+
+     <script type="text/javascript">
+        let parrafo=document.getElementById("parrafo")
+        console.log(parrafo)
+        console.log(parrafo.innerText)
+        parrafo.innerText="Modificando texto"
+
+        let parrafo2 = document.getElementsByTagName("p")
+        console.log(parrafo2)
+        parrafo2[1].id="nuevo"
+        parrafo2[1].style.color="yellow"
+        parrafo2[1].style.fontSize="50px"
+     </script>
+
+</body>
+</html>

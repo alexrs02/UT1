@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var palEs = new Array('facebook','tuenti','youtube','hotmail','marca');
+        var palSu = new Array('facebook','tuenti','youtube','google','blick');
+        var palPor = new Array('facebook','tuenti','youtube','jogos','marca');
+        var palTotal = new Array(palEs,palSu,palPor);
+
+        document.write("<table border=1>");
+        for (let i = 0; i < palTotal.length; i++) {
+            document.write("<tr>")
+            document.write("<td><b> Estado " + i + "</b></td>")
+            for (let x = 0; x < palTotal[i].length; x++) {
+                document.write("<td>" + palTotal[i][x] + "</td>")
+            }
+           document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>
